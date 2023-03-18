@@ -11,6 +11,7 @@ import Contact from './Contact';
 import Setting from './Setting';
 import IonIcon from 'react-native-vector-icons/Ionicons';
 import MatCIcon from 'react-native-vector-icons/MaterialCommunityIcons';
+import ChatRoom from './ChatRoom';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -118,6 +119,11 @@ const Main = () => {
         <Stack.Screen
           name="Chat Message"
           component={MyTabs}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Chat Room"
+          component={ChatRoom}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

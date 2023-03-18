@@ -49,21 +49,26 @@ const Chat = ({navigation, route: params}) => {
         </View>
       }
       fixedBottom={
-        <View
-          backgroundColor={'#8E6737'}
-          borderRadius={'30px'}
-          width={'60px'}
-          height={'60px'}
-          justifyContent={'center'}
-          alignItems={'center'}>
-          <TouchableOpacity>
-            <MatCIcon name="chat-plus" size={30} color={'white'} />
-          </TouchableOpacity>
+        <View alignItems={'flex-end'}>
+          <View
+            backgroundColor={'#8E6737'}
+            borderRadius={'30px'}
+            width={'60px'}
+            height={'60px'}
+            justifyContent={'center'}
+            alignItems={'center'}>
+            <TouchableOpacity>
+              <MatCIcon name="chat-plus" size={30} color={'white'} />
+            </TouchableOpacity>
+          </View>
         </View>
       }>
       <View>
         <View>
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() =>
+              navigation.navigate('Chat Room', {roomName: 'Kim Mingyu'})
+            }>
             <View flexDirection={'row'} alignItems={'center'} paddingBottom={3}>
               <View
                 backgroundColor={'black'}
