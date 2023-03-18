@@ -9,7 +9,7 @@ import {
 } from 'native-base';
 import {TouchableOpacity} from 'react-native';
 
-const Register = ({navigation}) => {
+const Login = ({navigation}) => {
   return (
     <NativeBaseProvider>
       <View
@@ -19,50 +19,39 @@ const Register = ({navigation}) => {
         alignItems="center">
         <Stack space={4} padding={10} width={'full'} maxWidth={400}>
           <Text fontWeight="bold" textAlign="center" fontSize={24}>
-            Register
+            Login
           </Text>
           <Input
             variant="underlined"
             borderBottomWidth={1}
-            borderBottomColor="#3f3f46"
-            placeholder="Email"
-            fontSize={16}
-            type="text"
-          />
-          <Input
-            variant="underlined"
-            borderBottomWidth={1}
-            borderBottomColor="#3f3f46"
-            placeholder="Username"
+            borderBottomColor="#8E6737"
+            placeholder="Username or email"
             fontSize={16}
           />
           <Input
             variant="underlined"
             borderBottomWidth={1}
-            borderBottomColor="#3f3f46"
+            borderBottomColor="#8E6737"
             placeholder="Password"
             fontSize={16}
-            type="password"
-          />
-          <Input
-            variant="underlined"
-            borderBottomWidth={1}
-            borderBottomColor="#3f3f46"
-            placeholder="Confirm password"
-            fontSize={16}
-            type="password"
           />
           <Button
             fontSize={16}
             marginY={3}
             height={50}
-            backgroundColor="#3f3f46">
-            Register
+            backgroundColor="#8E6737"
+            onPress={() =>
+              navigation.navigate('Chat Message', {
+                screen: 'Chat',
+                params: {user: 'Jane'},
+              })
+            }>
+            Login
           </Button>
           <View flexDirection="row">
-            <Text>Have an account?</Text>
-            <TouchableOpacity onPress={() => navigation.navigate('Login')}>
-              <Text underline> Login here</Text>
+            <Text>Don't have an account?</Text>
+            <TouchableOpacity onPress={() => navigation.navigate('Register')}>
+              <Text underline> Register here</Text>
             </TouchableOpacity>
           </View>
         </Stack>
@@ -71,4 +60,4 @@ const Register = ({navigation}) => {
   );
 };
 
-export default Register;
+export default Login;

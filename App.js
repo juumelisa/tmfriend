@@ -6,7 +6,7 @@
  */
 
 import React from 'react';
-import Main from './screens/Main';
+import Main from './src/screens/Main';
 
 function App() {
   // const isDarkMode = useColorScheme() === 'dark';

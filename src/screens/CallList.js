@@ -1,15 +1,7 @@
 import React from 'react';
-import {
-  Button,
-  Input,
-  NativeBaseProvider,
-  Stack,
-  Text,
-  View,
-} from 'native-base';
-import {TouchableOpacity} from 'react-native';
+import {NativeBaseProvider, Text, View} from 'native-base';
 
-const ChatList = ({navigation}) => {
+const CallList = ({navigation}) => {
   return (
     <NativeBaseProvider>
       <View
@@ -23,4 +15,4 @@ const ChatList = ({navigation}) => {
   );
 };
 
-export default ChatList;
+export default CallList;
