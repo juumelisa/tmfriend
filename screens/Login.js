@@ -1,7 +1,15 @@
 import React from 'react';
-import {Button, Input, NativeBaseProvider, Stack, View} from 'native-base';
+import {
+  Button,
+  Input,
+  NativeBaseProvider,
+  Stack,
+  Text,
+  View,
+} from 'native-base';
+import {TouchableOpacity} from 'react-native';
 
-const Login = () => {
+const Login = ({navigation}) => {
   return (
     <NativeBaseProvider>
       <View
@@ -10,6 +18,9 @@ const Login = () => {
         justifyContent="center"
         alignItems="center">
         <Stack space={4} padding={10} width={'full'} maxWidth={400}>
+          <Text fontWeight="bold" textAlign="center" fontSize={24}>
+            Login
+          </Text>
           <Input
             variant="underlined"
             borderBottomWidth={1}
@@ -24,7 +35,25 @@ const Login = () => {
             placeholder="Password"
             fontSize={16}
           />
-          <Button fontSize={16} marginY={3} height={50} backgroundColor="#3f3f46">Login</Button>
+          <Button
+            fontSize={16}
+            marginY={3}
+            height={50}
+            backgroundColor="#3f3f46"
+            onPress={() =>
+              navigation.navigate('Chat Message', {
+                screen: 'Chat',
+                params: {user: 'Jane'},
+              })
+            }>
+            Login
+          </Button>
+          <View flexDirection="row">
+            <Text>Don't have an account?</Text>
+            <TouchableOpacity onPress={() => navigation.navigate('Register')}>
+              <Text underline> Register here</Text>
+            </TouchableOpacity>
+          </View>
         </Stack>
       </View>
     </NativeBaseProvider>

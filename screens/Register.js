@@ -1,11 +1,73 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {
+  Button,
+  Input,
+  NativeBaseProvider,
+  Stack,
+  Text,
+  View,
+} from 'native-base';
+import {TouchableOpacity} from 'react-native';
 
-const Register = () => {
+const Register = ({navigation}) => {
   return (
-    <View>
-      <Text>Hello World</Text>
-    </View>
+    <NativeBaseProvider>
+      <View
+        width={'100%'}
+        height="100%"
+        justifyContent="center"
+        alignItems="center">
+        <Stack space={4} padding={10} width={'full'} maxWidth={400}>
+          <Text fontWeight="bold" textAlign="center" fontSize={24}>
+            Register
+          </Text>
+          <Input
+            variant="underlined"
+            borderBottomWidth={1}
+            borderBottomColor="#3f3f46"
+            placeholder="Email"
+            fontSize={16}
+            type="text"
+          />
+          <Input
+            variant="underlined"
+            borderBottomWidth={1}
+            borderBottomColor="#3f3f46"
+            placeholder="Username"
+            fontSize={16}
+          />
+          <Input
+            variant="underlined"
+            borderBottomWidth={1}
+            borderBottomColor="#3f3f46"
+            placeholder="Password"
+            fontSize={16}
+            type="password"
+          />
+          <Input
+            variant="underlined"
+            borderBottomWidth={1}
+            borderBottomColor="#3f3f46"
+            placeholder="Confirm password"
+            fontSize={16}
+            type="password"
+          />
+          <Button
+            fontSize={16}
+            marginY={3}
+            height={50}
+            backgroundColor="#3f3f46">
+            Register
+          </Button>
+          <View flexDirection="row">
+            <Text>Have an account?</Text>
+            <TouchableOpacity onPress={() => navigation.navigate('Login')}>
+              <Text underline> Login here</Text>
+            </TouchableOpacity>
+          </View>
+        </Stack>
+      </View>
+    </NativeBaseProvider>
   );
 };
 
