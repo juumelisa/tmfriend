@@ -14,7 +14,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "622221729205-1iv826uaq63ff6f79mhqn72dle8fqsfl.apps.googleusercontent.com",
+          "client_id": "622221729205-18aogmta4sa0l43q3gpqbh4khm14nmqa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tmfriend",
+            "certificate_hash": "195b26f7d2ef9f2f7d9d643a422acca8ffd73173"
+          }
+        },
+        {
+          "client_id": "622221729205-i7al3j8jmmkt79uaa2r5crnbj63a24ss.apps.googleusercontent.com",
           "client_type": 3
         }
       ],

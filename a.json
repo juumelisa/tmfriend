@@ -1,0 +1,35 @@
+{
+  "additionalUserInfo": {
+    "isNewUser": true,
+    "profile":
+    {
+      "aud": "622221729205-i7al3j8jmmkt79uaa2r5crnbj63a24ss.apps.googleusercontent.com",
+      "azp": "622221729205-i4i8lce2jlv4iu5h9s2m9eeq03tkf0sp.apps.googleusercontent.com",
+      "email": "jumelisa09@gmail.com",
+      "email_verified": true,
+      "exp": 1679224427,
+      "given_name": "Jumelisa",
+      "iat": 1679220827,
+      "iss": "https://accounts.google.com",
+      "locale": "en",
+      "name": "Jumelisa",
+      "picture": "https://lh3.googleusercontent.com/a/AGNmyxb8N_p3yDnJYeS8O0dBnqzRhl169sbKJfpuWtFG59I=s96-c",
+      "sub": "106624325205000905933"
+    },
+    "providerId": "google.com"
+  },
+  "user": {
+    "displayName": "Jumelisa",
+    "email": "jumelisa09@gmail.com",
+    "emailVerified": true,
+    "isAnonymous": false,
+    "metadata": [Object],
+    "multiFactor": [Object],
+    "phoneNumber": null,
+    "photoURL": "https://lh3.googleusercontent.com/a/AGNmyxb8N_p3yDnJYeS8O0dBnqzRhl169sbKJfpuWtFG59I=s96-c",
+    "providerData": [Array],
+    "providerId": "firebase",
+    "tenantId": null,
+    "uid": "aJhIaAAMcSa2PwaWcn0lLEjZVL93"
+  }
+}
