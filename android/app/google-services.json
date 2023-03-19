@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:622221729205:android:7946f3d954b307614d8dfc",
+        "mobilesdk_app_id": "1:622221729205:android:3bf26159ad082f3a4d8dfc",
         "android_client_info": {
-          "package_name": "com.jmelisa.tmfriend"
+          "package_name": "com.tmfriend"
         }
       },
       "oauth_client": [
