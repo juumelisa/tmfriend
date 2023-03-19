@@ -6,37 +6,59 @@ import FaIcon from 'react-native-vector-icons/FontAwesome';
 import IonIcon from 'react-native-vector-icons/Ionicons';
 import BubbleChat from '../components/BubbleChat';
 import BubbleChatSender from '../components/BubbleChatSender';
+import EnIcon from 'react-native-vector-icons/Entypo';
 
 const ChatRoom = ({navigation, route: params}) => {
   return (
     <Screen
+      invert={true}
+      fullWidth={true}
       statusBarColor={'#8E6737'}
       backgroundColor={'#DDD6CE'}
       fixedContent={
         <View flexDirection={'row'} alignItems={'center'}>
-          <TouchableOpacity onPress={() => navigation.navigate('Chat')}>
-            <FaIcon name="chevron-left" size={20} color={'white'} />
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <Text
-              fontSize={'18px'}
-              fontWeight={'bold'}
-              marginLeft={2}
-              color={'white'}>
-              {params.params.roomName}
-            </Text>
-          </TouchableOpacity>
+          <View flexDirection={'row'} width={'1/2'} alignItems={'center'}>
+            <TouchableOpacity onPress={() => navigation.navigate('Chat')}>
+              <FaIcon name="chevron-left" size={20} color={'white'} />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Text
+                fontSize={'18px'}
+                fontWeight={'bold'}
+                marginLeft={3}
+                color={'white'}>
+                {params.params.roomName}
+              </Text>
+            </TouchableOpacity>
+          </View>
+          <View width={'1/2'} flexDirection={'row'} justifyContent={'flex-end'}>
+            <View>
+              <TouchableOpacity>
+                <IonIcon name="call" size={18} color={'white'} />
+              </TouchableOpacity>
+            </View>
+            <View paddingLeft={10}>
+              <TouchableOpacity>
+                <EnIcon name="dots-three-vertical" size={18} color={'white'} />
+              </TouchableOpacity>
+            </View>
+          </View>
         </View>
       }
       fixedBottom={
-        <View width={'full'}>
+        <View width={'full'} backgroundColor={'#DDD6CE'}>
           <Input
             variant={'rounded'}
             padding={3}
             paddingLeft={'40px'}
+            paddingRight={'60px'}
             fontSize={16}
             height={'50px'}
             borderColor={'#8E6737'}
+            _focus={{
+              borderColor: '#8E6737',
+              backgroundColor: '#DDD6CE',
+            }}
           />
           <View
             position={'absolute'}
@@ -91,9 +113,30 @@ const ChatRoom = ({navigation, route: params}) => {
             text={'Lalala lili lulu ajkajdk ahsjd aydua mdkjd kajkdjaj'}
             time={'2:30 PM'}
           />
-          <BubbleChatSender bub={true} text={'Hola'} time={'2:32 PM'} />
+          <BubbleChatSender
+            bub={true}
+            text={'Hola hola hola'}
+            time={'2:32 PM'}
+          />
           <BubbleChat bub={true} text={'Annyeong'} time={'2:33 PM'} />
-          <BubbleChatSender bub={true} text={'You got that James Tee daydream look in your eyes'} time={'2:32 PM'} />
+          <BubbleChatSender
+            bub={true}
+            text={'You got that James Tee daydream look in your eyes'}
+            time={'2:32 PM'}
+          />
+          <BubbleChatSender text={'I love you'} time={'2:32 PM'} />
+          <BubbleChat bub={true} text={'How are you?'} time={'2:30 PM'} />
+          <BubbleChat text={'Hello'} time={'2:30 PM'} />
+          <BubbleChat
+            text={'Lalala lili lulu ajkajdk ahsjd aydua mdkjd kajkdjaj'}
+            time={'2:30 PM'}
+          />
+          <BubbleChat bub={true} text={'How are you?'} time={'2:30 PM'} />
+          <BubbleChat text={'Hello'} time={'2:30 PM'} />
+          <BubbleChat
+            text={'Lalala lili lulu ajkajdk ahsjd aydua mdkjd kajkdjaj'}
+            time={'2:30 PM'}
+          />
         </View>
       </View>
     </Screen>

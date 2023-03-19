@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "622221729205",
+    "project_id": "tmfriend-b3a95",
+    "storage_bucket": "tmfriend-b3a95.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622221729205:android:7946f3d954b307614d8dfc",
+        "android_client_info": {
+          "package_name": "com.jmelisa.tmfriend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622221729205-1iv826uaq63ff6f79mhqn72dle8fqsfl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ9xiDfTVMpO0PpEcFJExFTyF9bNAQI2o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622221729205-1iv826uaq63ff6f79mhqn72dle8fqsfl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

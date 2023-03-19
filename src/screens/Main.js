@@ -12,6 +12,7 @@ import Setting from './Setting';
 import IonIcon from 'react-native-vector-icons/Ionicons';
 import MatCIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import ChatRoom from './ChatRoom';
+import {Platform} from 'react-native';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -25,7 +26,8 @@ const MyTabs = () => {
           backgroundColor: '#fff',
           borderTopWidth: 1,
           borderTopColor: '#C3C3BC',
-          height: 60,
+          height: Platform.OS === 'ios' ? 80 : 60,
+          paddingVertical: 10,
         },
       }}>
       <Tab.Screen

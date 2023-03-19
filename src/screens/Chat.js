@@ -1,4 +1,4 @@
-import {Input, Text, View} from 'native-base';
+import {Image, Input, Text, View} from 'native-base';
 import React from 'react';
 import Screen from '../components/Screen';
 import FAIcon from 'react-native-vector-icons/FontAwesome';
@@ -67,20 +67,25 @@ const Chat = ({navigation, route: params}) => {
         <View>
           <TouchableOpacity
             onPress={() =>
-              navigation.navigate('Chat Room', {roomName: 'Kim Mingyu'})
+              navigation.navigate('Chat Room', {roomName: 'Choi Seungcheol'})
             }>
             <View flexDirection={'row'} alignItems={'center'} paddingBottom={3}>
-              <View
-                backgroundColor={'black'}
-                borderRadius={'30px'}
-                width={'60px'}
-                height={'60px'}
-              />
+              <View>
+                <Image
+                  source={{
+                    uri: 'https://res.cloudinary.com/juumelisa/image/upload/v1678231662/SERAN/uploads/user/user-1678231659795.png',
+                  }}
+                  alt={'Seungcheol'}
+                  width={'60px'}
+                  height={'60px'}
+                  borderRadius={'30px'}
+                />
+              </View>
               <View paddingX={3} maxWidth={'4/6'}>
                 <Text fontSize={16} fontWeight={'bold'}>
-                  Kim Mingyu
+                  Choi Seungcheol
                 </Text>
-                <Text>Lorem ipsum</Text>
+                <Text>Lorem ipsum dolor sir amet. ...</Text>
               </View>
               <View
                 position={'absolute'}
@@ -106,20 +111,22 @@ const Chat = ({navigation, route: params}) => {
           </TouchableOpacity>
 
           <View flexDirection={'row'} alignItems={'center'} paddingBottom={3}>
-            <View
-              backgroundColor={'amber.900'}
-              borderRadius={'30px'}
-              width={'60px'}
-              height={'60px'}
-              justifyContent={'center'}
-              alignItems={'center'}>
-              <Text color={'white'}>SVT</Text>
+            <View>
+              <Image
+                source={{
+                  uri: 'https://res.cloudinary.com/juumelisa/image/upload/v1679159921/foto-cover-potret-mingyu-sevent-20210301075232_xldf52.jpg',
+                }}
+                alt={'Mingyu'}
+                width={'60px'}
+                height={'60px'}
+                borderRadius={'30px'}
+              />
             </View>
             <View paddingX={3} maxWidth={'4/6'}>
               <Text fontSize={16} fontWeight={'bold'}>
-                SEVENTEEN
+                Kim Mingyu
               </Text>
-              <Text>Scoups: Ok</Text>
+              <Text>Hola</Text>
             </View>
             <View
               position={'absolute'}
@@ -143,14 +150,17 @@ const Chat = ({navigation, route: params}) => {
             </View>
           </View>
           <View flexDirection={'row'} alignItems={'center'} paddingBottom={3}>
-            <View
-              backgroundColor={'blue.800'}
-              borderRadius={'30px'}
-              width={'60px'}
-              height={'60px'}
-              justifyContent={'center'}
-              alignItems={'center'}
-            />
+            <View>
+              <Image
+                source={{
+                  uri: 'https://res.cloudinary.com/juumelisa/image/upload/v1679160094/632590594_ovphpz.webp',
+                }}
+                alt={'Mingyu'}
+                width={'60px'}
+                height={'60px'}
+                borderRadius={'30px'}
+              />
+            </View>
             <View paddingX={3} maxWidth={'4/6'}>
               <Text fontSize={16} fontWeight={'bold'}>
                 Jeon Wonwoo
@@ -305,6 +315,38 @@ const Chat = ({navigation, route: params}) => {
               <Text color={'#8E6737'}>2:58 PM</Text>
               <View
                 marginTop={2}
+                width={'20px'}
+                height={'20px'}
+                borderRadius={'10px'}
+                justifyContent={'center'}
+                alignItems={'center'}
+              />
+            </View>
+          </View>
+          <View flexDirection={'row'} alignItems={'center'} paddingBottom={3}>
+            <View
+              backgroundColor={'amber.900'}
+              borderRadius={'30px'}
+              width={'60px'}
+              height={'60px'}
+              justifyContent={'center'}
+              alignItems={'center'}>
+              <Text color={'white'}>SVT</Text>
+            </View>
+            <View paddingX={3} maxWidth={'4/6'}>
+              <Text fontSize={16} fontWeight={'bold'}>
+                SEVENTEEN
+              </Text>
+              <Text>Scoups: Ok</Text>
+            </View>
+            <View
+              position={'absolute'}
+              top={0}
+              right={0}
+              alignItems={'flex-end'}
+              height={'60px'}>
+              <Text color={'#8E6737'}>2:58 PM</Text>
+              <View
                 width={'20px'}
                 height={'20px'}
                 borderRadius={'10px'}
